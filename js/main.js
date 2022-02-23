@@ -16,4 +16,10 @@ elForm.addEventListener("submit" , function(event){
 
   elFormResult.textContent = (`${result}`)
 
+  if(elInputVal > 0){
+    elFormResult.textContent = (`${elInputVal}*${elInputVal}`);
+  }else if (elInputVal < 0){
+    elFormResult.textContent = "(0) dan katta raqam kiriting"; 
+  }
+
 })
